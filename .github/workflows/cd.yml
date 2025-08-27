@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "setup.sh"
-          target: "/var/www/nextapp/"
+          target: "/var/www/nextapp_setup/"
 # here the folder needed to exist otherwise the github actions fails
 # the build keeps failing
 
@@ -43,5 +43,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            bash /var/www/nextapp/setup.sh
+            bash /var/www/nextapp_setup/setup.sh
             
