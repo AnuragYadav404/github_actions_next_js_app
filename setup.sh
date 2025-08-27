@@ -8,7 +8,7 @@ echo "🚀 Starting deployment..."
 cd $APP_DIR
 
 # Pull latest code
-git pull origin main
+git clone "https://github.com/AnuragYadav404/github_actions_next_js_app.git"
 
 # Install only production dependencies
 npm install --production
