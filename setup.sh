@@ -23,7 +23,7 @@ fi
 cd $APP_DIR
 
 # Install only production dependencies
-npm install --production
+npm install
 
 # Build the Next.js app
 npm run build
