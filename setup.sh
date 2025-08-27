@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e  # exit if any command fails
 
-APP_DIR="/var/www/myapp"
+APP_DIR="/var/www/nextapp"
 REPO="https://github.com/AnuragYadav404/github_actions_next_js_app.git"
 
 echo "🚀 Starting deployment..."
