@@ -24,6 +24,7 @@ jobs:
           source: "setup.sh"
           target: "/var/www/nextapp/setup.sh"
 # here the folder needed to exist otherwise the github actions fails
+# the build keeps failing
 
       - name: Run deployment script
         uses: appleboy/ssh-action@v1.0.3
