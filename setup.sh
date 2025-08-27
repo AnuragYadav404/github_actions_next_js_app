@@ -7,6 +7,9 @@ echo "🚀 Starting deployment..."
 
 cd $APP_DIR
 
+
+export PATH=$HOME/.nvm/versions/node/v22.18.0/bin:$PATH
+
 # Pull latest code
 git clone "https://github.com/AnuragYadav404/github_actions_next_js_app.git"
 
