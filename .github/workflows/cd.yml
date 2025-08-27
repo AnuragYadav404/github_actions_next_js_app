@@ -22,7 +22,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "setup.sh"
-          target: "/var/www/myapp/setup.sh"
+          target: "/var/www/nextapp/setup.sh"
 # here the folder needed to exist otherwise the github actions fails
 
       - name: Run deployment script
@@ -32,5 +32,5 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            bash /var/www/myapp/setup.sh
+            bash /var/www/nextapp/setup.sh
             
