@@ -23,6 +23,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "setup.sh"
           target: "/var/www/myapp/setup.sh"
+# here the folder needed to exist otherwise the github actions fails
 
       - name: Run deployment script
         uses: appleboy/ssh-action@v1.0.3
